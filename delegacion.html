@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.css">
+    <style>
+        html, body, address, blockquote, div, dl, form, h1, h2, h3, h4, h5, h6, ol, ul, p, pre, table, dd, dt, li, tbody, td, tfoot, th, thead, tr, button, del, ins, map, object, a, abbr, acronym, b, bdo, big, br, cite, code, dfn, em, i, img, kbd, q, samp, small, h4, strong, sub, sup, tt, var, legend, fieldset {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,body,#orientacion, #puzzle{width: 100%; height: 100%; margin: 0}
+        #orientacion{ position: fixed; display: none; justify-content: center; align-items: center; z-index: 1;
+            background: #fdc72e
+        }
+        .botones{border: solid 4px #333; margin: 0 auto; width: 50%}
+        .btn{ background: palevioletred; padding: 20px; color: #333; margin-bottom: 2px}
+        p{ background: pink; padding: 10px}
+
+        .border{ border: solid 2px green}
+    </style>
+</head>
+
+<body>
+
+    <div id='yo' class="botones">
+        <div id="uno" class="btn"><p>Botones</p></div>
+        <div id="dos" class="btn"><p>Botones</p></div>
+        <div id="tres" class="btn"><p>Botones</p></div>
+        <div id="cuatro" class="btn"><p>Botones</p></div>
+    </div>
+    <script>
+
+/*         escuchar =(e)=>{
+            console.log(e.currentTarget );
+        }
+
+         const yo = document.querySelector('#yo');
+         yo.addEventListener('click', escuchar) */
+        
+
+
+/*         const botones = document.getElementsByClassName('btn');
+
+        laFuncion =(e)=>{
+            console.log(event.target);
+        }
+
+        for (let a =0; a < botones.length; a++){
+            console.log(a);
+            botones[a].addEventListener('click',laFuncion, false)
+        } */
+
+         document.addEventListener('click', function (event) {
+
+            if (event.target.matches('.btn')) {
+                //console.log(event.target.id);
+                console.log(event.target)
+            }
+        }, false);
+
+    </script>
+</body>
+
+</html>
