@@ -1,16 +1,9 @@
-# hwg
+# Example Event Delegation
 
-Here is my first repository
-
----
-Another line
+Here is a basic example of how you can apply events to multiple elements.
 
 ---
-1. Tarea
-2. Negocios
-3. Dinero
-4. Conocimiento
 
-***
+You only need to listen the entire document.
 
-[Vinculo a Google](https://www.google.com)
+`document.addEventListener('click', function (event) {   }, false);`
